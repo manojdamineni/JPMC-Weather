@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "54AAF6ED-5532-47CC-99FC-6D0DD0A97CFF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0CFD74C2-2F25-4EDB-AC42-1B7F5100F1E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherTests/Model/PresentWeatherTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "PresentWeatherTests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "0CFD74C2-2F25-4EDB-AC42-1B7F5100F1E9 - c993f877aded339a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherTests.PresentWeatherTests.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; WeatherTests.PresentWeatherTests"
+                  moduleName = "WeatherTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mm/Documents/GitHub/TCS/Weather/Weather/WeatherTests/Model/PresentWeatherTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "0CFD74C2-2F25-4EDB-AC42-1B7F5100F1E9 - 7235e244a1466afa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherTests.PresentWeatherTests.init(selector: ObjectiveC.Selector) -&gt; WeatherTests.PresentWeatherTests"
+                  moduleName = "WeatherTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mm/Documents/GitHub/TCS/Weather/Weather/WeatherTests/Model/PresentWeatherTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "0CFD74C2-2F25-4EDB-AC42-1B7F5100F1E9 - 8e84e4586c7afdf6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WeatherTests.PresentWeatherTests.init() -&gt; WeatherTests.PresentWeatherTests"
+                  moduleName = "WeatherTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mm/Documents/GitHub/TCS/Weather/Weather/WeatherTests/Model/PresentWeatherTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
