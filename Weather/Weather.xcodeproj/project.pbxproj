@@ -74,6 +74,9 @@
 		8D21CFA42A18378100F43E99 /* PresentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D21CFA32A18378100F43E99 /* PresentWeatherView.swift */; };
 		8D21CFA52A18378100F43E99 /* PresentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D21CFA32A18378100F43E99 /* PresentWeatherView.swift */; };
 		8D21CFA62A18378100F43E99 /* PresentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D21CFA32A18378100F43E99 /* PresentWeatherView.swift */; };
+		8D21CFA82A18FF7000F43E99 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D21CFA72A18FF7000F43E99 /* LocalStorage.swift */; };
+		8D21CFA92A18FF7000F43E99 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D21CFA72A18FF7000F43E99 /* LocalStorage.swift */; };
+		8D21CFAA2A18FF7000F43E99 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D21CFA72A18FF7000F43E99 /* LocalStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +132,7 @@
 		8D21CF9B2A18357C00F43E99 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		8D21CF9F2A18376A00F43E99 /* SearchCityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityController.swift; sourceTree = "<group>"; };
 		8D21CFA32A18378100F43E99 /* PresentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentWeatherView.swift; sourceTree = "<group>"; };
+		8D21CFA72A18FF7000F43E99 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				8D21CF812A18341100F43E99 /* Spinner.swift */,
+				8D21CFA72A18FF7000F43E99 /* LocalStorage.swift */,
 				8D21CF852A18342200F43E99 /* Observable.swift */,
 			);
 			path = SupportingFiles;
@@ -468,6 +473,7 @@
 				8D21CF7D2A18337B00F43E99 /* PresentWeatherViewModel.swift in Sources */,
 				8D21CF982A18356D00F43E99 /* TimeStamp+Date.swift in Sources */,
 				8D21CF052A18064700F43E99 /* AppDelegate.swift in Sources */,
+				8D21CFA82A18FF7000F43E99 /* LocalStorage.swift in Sources */,
 				8D21CF902A1834DC00F43E99 /* weather_data.json in Sources */,
 				8D21CF072A18064700F43E99 /* SceneDelegate.swift in Sources */,
 				8D21CFA42A18378100F43E99 /* PresentWeatherView.swift in Sources */,
@@ -499,6 +505,7 @@
 				8D21CF9D2A18357C00F43E99 /* UIViewController+Alert.swift in Sources */,
 				8D21CF4A2A180E8600F43E99 /* Data+String.swift in Sources */,
 				8D21CFA52A18378100F43E99 /* PresentWeatherView.swift in Sources */,
+				8D21CFA92A18FF7000F43E99 /* LocalStorage.swift in Sources */,
 				8D21CF392A180D1900F43E99 /* APIClient.swift in Sources */,
 				8D21CF912A1834DC00F43E99 /* weather_data.json in Sources */,
 				8D21CF542A180F8500F43E99 /* EndPointTests.swift in Sources */,
@@ -526,6 +533,7 @@
 				8D21CF7F2A18337B00F43E99 /* PresentWeatherViewModel.swift in Sources */,
 				8D21CF3E2A180D6D00F43E99 /* APIRequest.swift in Sources */,
 				8D21CF502A180EEA00F43E99 /* Key.swift in Sources */,
+				8D21CFAA2A18FF7000F43E99 /* LocalStorage.swift in Sources */,
 				8D21CF8E2A1834A200F43E99 /* FileLoader.swift in Sources */,
 				8D21CF3A2A180D1900F43E99 /* APIClient.swift in Sources */,
 				8D21CF882A18342200F43E99 /* Observable.swift in Sources */,

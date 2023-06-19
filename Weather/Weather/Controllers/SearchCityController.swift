@@ -51,6 +51,7 @@ class SearchCityController: UIViewController {
 
     private func bindDataToUI() {
         searchLocationLabel.text = ""
+
         viewModel.isLoading.bind { [unowned self] (isLoading) in
             if isLoading { self.presentActivity() }
             else { self.dismissActivity() }
@@ -88,6 +89,9 @@ class SearchCityController: UIViewController {
                 searchLocationContainerWeatherView.isHidden = editing
             }
         }
+        
+        // Fetch the last search city weather
+        viewModel.fetchLastCityWeather()
     }
     
     private func setupData(_ weather: WeatherFormatted, on view: UIView) {

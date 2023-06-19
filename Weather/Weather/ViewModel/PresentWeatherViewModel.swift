@@ -21,6 +21,7 @@ class PresentWeatherViewModel: ObservableObject {
     private var presentLocationWeather = Observable<PresentWeather?>(nil)
     var presentLocationWeatherFormatted = Observable<WeatherFormatted?>(nil)
     var searchBarEditing = Observable<Bool>(false)
+    @LocalStorage(key: "last_search_city") var lastSearchCity: String? = nil
 
     // MARK: - Init
     init(dataManager: Fetchable = DataManager()) {
@@ -40,6 +41,13 @@ class PresentWeatherViewModel: ObservableObject {
     func updateSearchEditing(_ editing: Bool) {
         self.searchBarEditing.value = editing
     }
+    
+    func fetchLastCityWeather() {
+        if let lastCity = lastSearchCity {
+            city.value = lastCity
+            fetchWeather()
+        }
+    }
 }
 
 //MARK: - Networking
@@ -56,6 +64,8 @@ extension PresentWeatherViewModel {
             if let weather = weather {
                 if let message = weather.message {
                     self.error.value = NetworkError.genericError(message)
+                } else {
+                    self.lastSearchCity = self.city.value
                 }
                 self.weather.value = weather
                 self.weatherFormatted.value = weather.formatted
