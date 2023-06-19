@@ -88,6 +88,7 @@ struct Wind: Codable {
 
 //MARK: - Formatted Weather
 struct WeatherFormatted {
+    var city: String = ""
     var temparature: String = ""
     var condition: String = ""
     var description: String = ""
@@ -126,6 +127,7 @@ extension PresentWeather {
         
         // Assign it to model
         var weatherFormatted = WeatherFormatted()
+        weatherFormatted.city = self.name ?? ""
         weatherFormatted.temparature = temparature
         weatherFormatted.condition = condition
         weatherFormatted.description = description

@@ -1,44 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WPJ-Im-LP8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ETy-of-hNm">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Search City Controller-->
-        <scene sceneID="GvM-Xx-GMc">
+        <scene sceneID="q2h-uw-gcU">
             <objects>
-                <viewController id="Oz9-5u-q3S" customClass="SearchCityController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4EM-Os-rv5">
+                <viewController id="BxK-on-1sS" customClass="SearchCityController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t5n-Zb-cBk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="5Tn-2r-HPg"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="p73-P9-7rn">
+                                <rect key="frame" x="0.0" y="175" width="393" height="643"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qLI-vR-idg">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="284"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXf-SB-9Zl">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgl-bV-YCp">
+                                                <rect key="frame" x="0.0" y="34" width="393" height="250"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7iz-qV-e5F">
+                                        <rect key="frame" x="0.0" y="292" width="393" height="351"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G7-Kq-7M3">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFJ-qQ-dlG">
+                                                <rect key="frame" x="0.0" y="34" width="393" height="317"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rFJ-qQ-dlG" firstAttribute="height" secondItem="sgl-bV-YCp" secondAttribute="height" multiplier="1.268" id="bdq-r2-ec1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8o9-RN-3Iv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p73-P9-7rn" firstAttribute="trailing" secondItem="8o9-RN-3Iv" secondAttribute="trailing" id="3aX-Ha-J7e"/>
+                            <constraint firstItem="p73-P9-7rn" firstAttribute="leading" secondItem="8o9-RN-3Iv" secondAttribute="leading" id="9X1-cv-eFf"/>
+                            <constraint firstItem="8o9-RN-3Iv" firstAttribute="bottom" secondItem="p73-P9-7rn" secondAttribute="bottom" id="P6J-Kf-yt5"/>
+                            <constraint firstItem="p73-P9-7rn" firstAttribute="top" secondItem="8o9-RN-3Iv" secondAttribute="top" constant="20" id="RRd-dM-zrE"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nGq-Sy-pDh"/>
+                    <navigationItem key="navigationItem" id="rr6-FF-BDv"/>
+                    <connections>
+                        <outlet property="currentLocationContainerWeatherView" destination="7iz-qV-e5F" id="kzN-QT-FsZ"/>
+                        <outlet property="currentLocationWeatherView" destination="rFJ-qQ-dlG" id="eGq-rT-zJE"/>
+                        <outlet property="searchLocationContainerWeatherView" destination="qLI-vR-idg" id="cJ5-yC-Qe6"/>
+                        <outlet property="searchLocationLabel" destination="XXf-SB-9Zl" id="aNz-2H-sW6"/>
+                        <outlet property="searchLocationWeatherView" destination="sgl-bV-YCp" id="Wa0-M8-bgp"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CBR-dM-pSb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DuD-eQ-CGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="4"/>
+            <point key="canvasLocation" x="942.74809160305335" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="EEV-NJ-eG6">
+        <scene sceneID="frR-6C-JvC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WPJ-Im-LP8" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ETy-of-hNm" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="3De-zY-hzc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="RcT-aE-xn6">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Oz9-5u-q3S" kind="relationship" relationship="rootViewController" id="ccg-eo-0Mf"/>
+                        <segue destination="BxK-on-1sS" kind="relationship" relationship="rootViewController" id="Oyv-e5-12k"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kWk-9p-s8m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yg-tg-OHK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
         </scene>

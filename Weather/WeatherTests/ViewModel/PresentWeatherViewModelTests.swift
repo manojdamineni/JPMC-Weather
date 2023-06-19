@@ -37,7 +37,7 @@ class PresentWeatherViewModelTests: XCTestCase {
         XCTAssertTrue(dataManager.isDataFetched, "Data should be fetched")
     }
     
-    func testFetchTracksFail() {
+    func testFetchWeatherFail() {
         
         //Given
         let error = NetworkError.noData
